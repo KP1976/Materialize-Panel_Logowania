@@ -1,0 +1,39 @@
+nav {
+  padding: 0 2rem;
+
+  .brand-logo {
+    font-size: 25px;
+  }
+}
+
+.nav-search-wrapper {
+  align-items: center;
+  border-radius: 2px;
+  display: flex;
+  height: 40px;
+  margin-left: 350px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+
+  .material-icons {
+    margin: 0 2rem;
+  }
+}
+
+.nav-search-input {
+  border: none !important;
+  margin: 0 !important;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: none;
+  box-shadow: none;
+}
+
+@media only screen and (min-width: 993px) {
+  nav a.button-collapse {
+    display: block;
+  }
+}
