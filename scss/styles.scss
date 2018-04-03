@@ -11,8 +11,8 @@ nav {
   border-radius: 2px;
   display: flex;
   height: 40px;
-  margin-left: 350px;
-  position: relative;
+  margin-left: 300px;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 300px;
@@ -30,6 +30,55 @@ nav {
 input[type="text"]:not(.browser-default):focus:not([readonly]) {
   border-bottom: none;
   box-shadow: none;
+}
+
+.badge {
+  height: 64px;
+  &::after {
+    content: "3";
+    background-color: #ff6f00;
+    border-radius: 50%;
+    left: -10px;
+    padding: 1px 6px;
+    position: relative;
+    top: -75px;
+  }
+}
+
+.flags {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  &::before {
+    content: "\00a0";
+  }
+}
+
+.flag-poland {
+  background-image: url("../img/flagi/poland.svg");
+}
+
+.flag-gb {
+  background-image: url("../img/flagi/united-kingdom.svg");
+}
+
+.flag-germany {
+  background-image: url("../img/flagi/germany.svg");
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  top: 50%;
+}
+
+.very-big {
+  height: 200px;
+  width: 200px;
 }
 
 @media only screen and (min-width: 993px) {

@@ -1,7 +1,20 @@
-$(function() {
-  // BOCZNE MENU
-  $(".button-collapse").sideNav();
+setTimeout(_ => {
+  $(function() {
+    $(".loader").hide();
 
-  // MODAL
-  $(".modal").modal();
-});
+    // BOCZNE MENU
+    $(".button-collapse").sideNav();
+
+    // MODAL
+    $(".modal").modal();
+
+    // DROPDOWN
+    $(".dropdown-button").dropdown({
+      constrainWidth: false,
+      hover: true,
+      container: true,
+      belowOrigin: true,
+      alignment: "left"
+    });
+  });
+}, 1300);

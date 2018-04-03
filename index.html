@@ -19,12 +19,68 @@
           <i class="material-icons">menu</i>
         </a>
         <a href="index.html" class="brand-logo">Panel Logowania</a>
+        <div class="nav-search-wrapper grey darken-3 hide-on-med-and-down">
+          <i class="material-icons white-text">search</i>
+          <input type="text" class="nav-search-input z-depth-2 white-text" placeholder="Szukaj">
+        </div>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="#" class="waves-effect waves-light badge">
+              <i class="material-icons">notifications_none</i>
+            </a>
+          </li>
+
+          <!-- MENU PROFILOWE -->
+          <li>
+            <a href="#" class="dropdown-button waves-effect waves-light" href='#' data-activates='profile-dropdown'>
+              <i class="material-icons">face</i>
+            </a>
+            <ul id='profile-dropdown' class='dropdown-content'>
+              <li>
+                <a href="#" class="grey-text text-darken-4">
+                  <i class="material-icons">face</i> Profil Użytkownika
+                </a>
+              </li>
+              <li>
+                <a href="#" class="grey-text text-darken-4">
+                  <i class="material-icons">settings</i> Ustawienia
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="#" class="grey-text text-darken-4">
+                  <i class="material-icons">keyboard_tab</i> Wyloguj się
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- MENU JĘZYKOWE -->
+          <li>
+            <a href="#" class="dropdown-button waves-effect waves-light" href='#' data-activates='language-dropdown'>
+              <span class="flags flag-poland"></span>
+            </a>
+            <ul id='language-dropdown' class='dropdown-content'>
+              <li>
+                <a href="#" class="grey-text text-darken-4">
+                  <i class="flags flag-poland"></i>Polski
+                </a>
+              </li>
+              <li>
+                <a href="#" class="grey-text text-darken-4">
+                  <i class="flags flag-gb"></i>Angielski
+                </a>
+              </li>
+              <li>
+                <a href="#" class="grey-text text-darken-4">
+                  <i class="flags flag-germany"></i>Niemiecki
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </nav>
-    <div class="nav-search-wrapper grey darken-3 hide-on-med-and-down">
-      <i class="material-icons white-text">search</i>
-      <input type="text" class="nav-search-input z-depth-2 white-text" placeholder="Szukaj">
-    </div>
   </div>
 
   <!-- NAWIGACJA - PASEK MENU Z LEWEJ STRONY -->
@@ -93,12 +149,28 @@
         <span class="side-nav-text">Tabele</span>
       </a>
     </li>
-    <div class="divider"></div>
-    </li>
-    <li>
-      <a href="#" class="btn grey darken-3">Zaloguj</a>
-    </li>
   </ul>
+
+  <!-- PRELOADER -->
+  <div class="loader center preloader-wrapper very-big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div>
+      <div class="gap-patch">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div>Icons made by
+    <a href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from
+    <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by
+    <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+  </div>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
