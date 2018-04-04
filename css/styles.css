@@ -41,7 +41,7 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) {
 }
 .badge::after {
   content: "3";
-  background-color: #ff6f00;
+  background-color: #2196f3;
   border-radius: 50%;
   left: -10px;
   padding: 1px 6px;
@@ -73,7 +73,15 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) {
   background-image: url("../img/flagi/germany.svg");
 }
 
-.center {
+.card-panel {
+  min-height: 150px;
+}
+.card-panel h4,
+.card-panel p {
+  margin-top: 0;
+}
+
+.center-preloader {
   position: absolute;
   left: 50%;
   margin: -100px 0 0 -100px;
