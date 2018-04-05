@@ -73,14 +73,14 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) {
   background-image: url("../img/flagi/germany.svg");
 }
 
-.card-panel {
+.section-statistics .card-panel {
   min-height: 150px;
 }
-.card-panel h4,
-.card-panel p {
+.section-statistics .card-panel h4,
+.section-statistics .card-panel p {
   margin-top: 0;
 }
-.card-panel h5 {
+.section-statistics .card-panel h5 {
   font-size: 1.2rem;
 }
 
