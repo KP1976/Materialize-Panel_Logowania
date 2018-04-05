@@ -82,6 +82,12 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) {
   }
 }
 
+.avatar {
+  div {
+    margin-top: 1rem;
+  }
+}
+
 .center-preloader {
   position: absolute;
   left: 50%;

@@ -84,6 +84,10 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) {
   font-size: 1.2rem;
 }
 
+.avatar div {
+  margin-top: 1rem;
+}
+
 .center-preloader {
   position: absolute;
   left: 50%;
