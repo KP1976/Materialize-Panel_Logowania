@@ -1,6 +1,10 @@
+$(".section").hide();
+
 setTimeout(_ => {
   $(function() {
     $(".loader").hide();
+
+    $(".section").show();
 
     // BOCZNE MENU
     $(".button-collapse").sideNav();
