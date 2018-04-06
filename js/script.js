@@ -32,7 +32,6 @@ setTimeout(_ => {
 
       $(".todos").append(output);
 
-      // Materialize.toast('Zadanie dodane', 1500);
       Materialize.toast('Zadanie dodane', 1500, 'rounded');
 
       e.preventDefault();
@@ -45,11 +44,6 @@ setTimeout(_ => {
       Materialize.toast('Zadanie usunięte', 1500, 'rounded');
 
       e.preventDefault();
-    });
-
-    // TOOLTIPY
-    $('.tooltipped').tooltip({
-      enterDelay: 100
     });
   });
 }, 1300);

@@ -1,3 +1,30 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
 nav {
   padding: 0 2rem;
 }
@@ -113,6 +140,14 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 .very-big {
   height: 200px;
   width: 200px;
+}
+
+.section-login {
+  width: 100%;
+}
+
+.input-field .prefix.active {
+  color: #2196F3;
 }
 
 @media only screen and (min-width: 993px) {

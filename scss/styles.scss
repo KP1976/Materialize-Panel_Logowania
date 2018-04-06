@@ -1,8 +1,16 @@
-// body {
-//   display: flex;
-//   min-height: 100vh;
-//   flex-direction: column;
-// }
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex: 1 0 auto;
+  justify-content: center;
+  width: 100%;
+}
 
 nav {
   padding: 0 2rem;
@@ -120,6 +128,14 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 .very-big {
   height: 200px;
   width: 200px;
+}
+
+.section-login {
+  width: 100%;
+}
+
+.input-field .prefix.active {
+  color: #2196F3;
 }
 
 @media only screen and (min-width: 993px) {

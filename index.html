@@ -48,7 +48,7 @@
               </li>
               <li class="divider"></li>
               <li>
-                <a href="#" class="grey-text text-darken-4">
+                <a href="login.html" class="grey-text text-darken-4">
                   <i class="material-icons">keyboard_tab</i> Wyloguj się
                 </a>
               </li>
@@ -108,27 +108,40 @@
       </a>
     </li>
     <li>
-      <a class="black-text" href="#!">
+      <a class="black-text" href="users.html">
+        <i class="material-icons">supervisor_account</i>
+        <span class="side-nav-text">Użytkownicy</span>
+      </a>
+    </li>
+    <li>
+      <a class="black-text" href="posts.html">
+        <i class="material-icons">mode_edit</i>
+        <span class="side-nav-text">Posty</span>
+      </a>
+    </li>
+    <li>
+      <a class="black-text" href="users.html">
+        <i class="material-icons">folder</i>
+        <span class="side-nav-text">Kategorie</span>
+      </a>
+    </li>
+    <li>
+      <a class="black-text" href="posts.html">
+        <i class="material-icons">mode_comment</i>
+        <span class="side-nav-text">Komentarze</span>
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a class="subheader" href="#!">
         <i class="material-icons">chrome_reader_mode</i>
         <span class="side-nav-text">Formularze</span>
       </a>
     </li>
     <li>
-      <a class="black-text" href="#!">
+      <a class="subheader" href="#!">
         <i class="material-icons">perm_media</i>
         <span class="side-nav-text">Media</span>
-      </a>
-    </li>
-    <li>
-      <a class="black-text" href="#!">
-        <i class="material-icons">today</i>
-        <span class="side-nav-text">Kalendarz</span>
-      </a>
-    </li>
-    <li>
-      <a class="black-text" href="#!">
-        <i class="material-icons">shopping_cart</i>
-        <span class="side-nav-text">Zakupy</span>
       </a>
     </li>
     <li>
@@ -138,15 +151,22 @@
       </a>
     </li>
     <li>
-      <a class="black-text" href="#!">
+      <a class="subheader" href="#!">
         <i class="material-icons">web</i>
         <span class="side-nav-text">Layouty</span>
       </a>
     </li>
     <li>
-      <a class="black-text" href="#!">
+      <a class="subheader" href="#!">
         <i class="material-icons">border_all</i>
         <span class="side-nav-text">Tabele</span>
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a class="black-text" href="login.html">
+        <i class="material-icons">keyboard_tab</i>
+        <span class="side-nav-text">Wyloguj</span>
       </a>
     </li>
   </ul>
@@ -444,33 +464,33 @@
   </section>
 
   <!-- STOPKA -->
-  <footer class="section blue darken-2 white-text center">
+  <footer class="section grey darken-4 white-text center">
     <p>&copy; Krzysztof Pawłowski 2018</p>
     <div class="section center white-text">Flag Icons made by
-      <a class="blue-text text-lighten-3" href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from
-      <a class="blue-text text-lighten-3" href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by
-      <a class="blue-text text-lighten-3" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+      <a class="blue-text" href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from
+      <a class="blue-text" href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by
+      <a class="blue-text" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
     </div>
   </footer>
 
   <!-- PRZYPIĘTY PRZYCISK Z AKCJĄ -->
   <div class="fixed-action-btn click-to-toggle">
-    <a class="btn-floating btn-large grey darken-4">
+    <a class="btn-floating btn-large blue">
       <i class="material-icons">add</i>
     </a>
     <ul>
       <li>
-        <a href="#category-modal" class="modal-trigger btn-floating blue tooltipped" data-delay="100" data-position="top" data-tooltip="Dodaj kategorię">
+        <a href="#category-modal" class="modal-trigger btn-floating blue tooltipped" data-delay="100" data-position="left" data-tooltip="Dodaj kategorię">
           <i class="material-icons">folder</i>
         </a>
       </li>
       <li>
-        <a href="#post-modal" class="modal-trigger btn-floating blue tooltipped" data-delay="100" data-position="top" data-tooltip="Dodaj post">
+        <a href="#post-modal" class="modal-trigger btn-floating blue tooltipped" data-delay="100" data-position="left" data-tooltip="Dodaj post">
           <i class="material-icons">mode_edit</i>
         </a>
       </li>
       <li>
-        <a href="#user-modal" class="modal-trigger btn-floating blue tooltipped" data-delay="100" data-position="top" data-tooltip="Dodaj użytkownika">
+        <a href="#user-modal" class="modal-trigger btn-floating blue tooltipped" data-delay="100" data-position="left" data-tooltip="Dodaj użytkownika">
           <i class="material-icons">supervisor_account</i>
         </a>
       </li>
@@ -511,8 +531,8 @@
       <h4 class="center">Dodaj Post</h4>
       <form>
         <div class="input-field">
-          <input type="text" id="title">
-          <label for="title">Tytuł</label>
+          <input type="text" id="post-title">
+          <label for="post-title">Tytuł</label>
         </div>
         <div class="input-field">
           <select>
@@ -541,8 +561,8 @@
       <h4 class="center">Dodaj Kategorię</h4>
       <form>
         <div class="input-field">
-          <input type="text" id="title">
-          <label for="title">Tytuł</label>
+          <input type="text" id="category-title">
+          <label for="category-title">Tytuł</label>
         </div>
       </form>
       <div class="modal-footer">
