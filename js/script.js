@@ -46,5 +46,10 @@ setTimeout(_ => {
 
       e.preventDefault();
     });
+
+    // TOOLTIPY
+    $('.tooltipped').tooltip({
+      enterDelay: 100
+    });
   });
 }, 1300);
