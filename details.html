@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Panel Logowania</title>
+</head>
+
+<body class="grey darken-1">
+  <div class="navbar-fixed">
+    <nav class="grey darken-4">
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile" class="button-collapse left">
+          <i class="material-icons">menu</i>
+        </a>
+        <a href="index.html" class="brand-logo">Panel Logowania</a>
+        <div class="nav-search-wrapper grey darken-3 hide-on-med-and-down">
+          <i class="material-icons white-text">search</i>
+          <input type="text" class="nav-search-input z-depth-2 white-text" placeholder="Szukaj">
+        </div>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="#" class="waves-effect waves-light badge">
+              <i class="material-icons">notifications_none</i>
+            </a>
+          </li>
+
+          <!-- MENU PROFILOWE -->
+          <li>
+            <a href="#" class="dropdown-button waves-effect waves-light" href='#' data-activates='profile-dropdown'>
+              <i class="material-icons">face</i>
+            </a>
+            <ul id='profile-dropdown' class='dropdown-content'>
+              <li>
+                <a href="#" class="grey-text text-darken-4">
+                  <i class="material-icons">face</i> Profil Użytkownika
+                </a>
+              </li>
+              <li>
+                <a href="#" class="grey-text text-darken-4">
+                  <i class="material-icons">settings</i> Ustawienia
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="login.html" class="grey-text text-darken-4">
+                  <i class="material-icons">keyboard_tab</i> Wyloguj się
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- MENU JĘZYKOWE -->
+          <li>
+            <a href="#" class="dropdown-button waves-effect waves-light" href='#' data-activates='language-dropdown'>
+              <span class="flags flag-poland"></span>
+            </a>
+            <ul id='language-dropdown' class='dropdown-content'>
+              <li>
+                <a href="#" class="grey-text text-darken-4">
+                  <i class="flags flag-poland"></i>Polski
+                </a>
+              </li>
+              <li>
+                <a href="#" class="grey-text text-darken-4">
+                  <i class="flags flag-gb"></i>Angielski
+                </a>
+              </li>
+              <li>
+                <a href="#" class="grey-text text-darken-4">
+                  <i class="flags flag-germany"></i>Niemiecki
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- NAWIGACJA - PASEK MENU Z LEWEJ STRONY -->
+  <ul class="side-nav" id="mobile">
+    <li>
+      <div class="user-view">
+        <div class="background black">
+          <img src="img/sea.jpg" alt="">
+        </div>
+        <a href="#!">
+          <img src="img/face1.jpg" alt="" class="circle">
+        </a>
+        <a href="#!">
+          <span class="name white-text">Anna Korolek</span>
+        </a>
+        <a href="#!">
+          <span class="email white-text">akorolek@gmail.com</span>
+        </a>
+      </div>
+    </li>
+    <li>
+      <a class="black-text" href="index.html">
+        <i class="material-icons">dashboard</i>
+        <span class="side-nav-text">Panel Główny</span>
+      </a>
+    </li>
+    <li>
+      <a class="black-text" href="users.html">
+        <i class="material-icons">supervisor_account</i>
+        <span class="side-nav-text">Użytkownicy</span>
+      </a>
+    </li>
+    <li>
+      <a class="black-text" href="posts.html">
+        <i class="material-icons">mode_edit</i>
+        <span class="side-nav-text">Posty</span>
+      </a>
+    </li>
+    <li>
+      <a class="black-text" href="users.html">
+        <i class="material-icons">folder</i>
+        <span class="side-nav-text">Kategorie</span>
+      </a>
+    </li>
+    <li>
+      <a class="black-text" href="posts.html">
+        <i class="material-icons">mode_comment</i>
+        <span class="side-nav-text">Komentarze</span>
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a class="subheader" href="#!">
+        <i class="material-icons">chrome_reader_mode</i>
+        <span class="side-nav-text">Formularze</span>
+      </a>
+    </li>
+    <li>
+      <a class="subheader" href="#!">
+        <i class="material-icons">perm_media</i>
+        <span class="side-nav-text">Media</span>
+      </a>
+    </li>
+    <li>
+      <a class="black-text" href="#!">
+        <i class="material-icons">mail</i>
+        <span class="side-nav-text">Skrzynka Pocztowa</span>
+      </a>
+    </li>
+    <li>
+      <a class="subheader" href="#!">
+        <i class="material-icons">web</i>
+        <span class="side-nav-text">Layouty</span>
+      </a>
+    </li>
+    <li>
+      <a class="subheader" href="#!">
+        <i class="material-icons">border_all</i>
+        <span class="side-nav-text">Tabele</span>
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a class="black-text" href="login.html">
+        <i class="material-icons">keyboard_tab</i>
+        <span class="side-nav-text">Wyloguj</span>
+      </a>
+    </li>
+  </ul>
+
+  <main class="main-container">
+    <!-- SEKCJA LOGOWANIA -->
+    <section class="section section-details">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l12">
+            <div class="card z-depth-5">
+              <div class="card-content">
+                <h4 class="center">Szczegóły Posta</h4>
+                <div class="row">
+                  <div class="col s12 l5 center">
+                    <img src="img/face1.jpg" alt="" class="responsive-img">
+                    <h5 class="blue-text">Anna Korolek</h5>
+                    <p class="blue-text">15 lutego 2018</p>
+                  </div>
+                  <div class="col s12 l7">
+                    <form>
+                      <div class="input-field">
+                        <input type="text" id="post-title" value="Post Pierwszy">
+                        <label for="post-title">Tytuł</label>
+                      </div>
+                      <div class="input-field">
+                        <select>
+                          <option value="" disabled>Wybierz Opcję</option>
+                          <option value="1" selected>Web Deweloperka</option>
+                          <option value="2">Projektowanie</option>
+                          <option value="3">Gadżety Techniczne</option>
+                          <option value="4">Inne</option>
+                        </select>
+                        <label>Katogoria</label>
+                      </div>
+                      <div class="input-field">
+                        <h5>Treść Posta</h5>
+                        <textarea name="body" id="body" class="materialize-textarea"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="card-action">
+                <button class="btn-large blue right">Zapisz</button>
+                <button class="btn-large grey darken-4">Skasuj</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- STOPKA -->
+  <footer class="section grey darken-4 white-text center">
+    <p>&copy; Krzysztof Pawłowski 2018</p>
+    <div class="section center white-text">Flag Icons made by
+      <a class="blue-text text-lighten-3" href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from
+      <a class="blue-text text-lighten-3" href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by
+      <a class="blue-text text-lighten-3" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+    </div>
+  </footer>
+
+  <!-- PRELOADER -->
+  <div class="loader center-preloader preloader-wrapper very-big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div>
+      <div class="gap-patch">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="https://cdn.ckeditor.com/4.9.0/standard/ckeditor.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/details.js"></script>
+  <script>
+    CKEDITOR.replace('body');
+  </script>
+</body>
+
+</html>

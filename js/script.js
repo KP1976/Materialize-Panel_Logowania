@@ -1,16 +1,21 @@
 $(".section").hide();
+$(".main-container").hide();
 
 setTimeout(_ => {
   $(function () {
     $(".loader").hide();
 
     $(".section").show();
+    $(".main-container").show();
 
     // BOCZNE MENU
     $(".button-collapse").sideNav();
 
     // MODAL
     $(".modal").modal();
+
+    // INICJALIZACJA SELECT W MODALU
+    $('select').material_select();
 
     // DROPDOWN
     $(".dropdown-button").dropdown({
