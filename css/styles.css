@@ -143,7 +143,8 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 }
 
 .section-login,
-.section-details {
+.section-details,
+.section-users {
   width: 100%;
 }
 
@@ -153,6 +154,10 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 
 .dropdown-content li > span {
   color: #2196F3;
+}
+
+.pagination li.active {
+  background-color: #2196F3;
 }
 
 @media only screen and (min-width: 993px) {

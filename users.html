@@ -172,48 +172,98 @@
   </ul>
 
   <main class="main-container">
-    <!-- SEKCJA LOGOWANIA -->
-    <section class="section section-details">
+    <!-- SEKCJA UŻYTKOWNIKA -->
+    <section class="section section-users">
       <div class="container">
         <div class="row">
           <div class="col s12 l12">
             <div class="card z-depth-5">
               <div class="card-content">
-                <h4 class="center">Szczegóły Posta</h4>
-                <div class="row">
-                  <div class="col s12 l5 center">
-                    <img src="" alt="" class="responsive-img">
-                    <h5 class="blue-text"></h5>
-                    <p class="blue-text"></p>
-                  </div>
-                  <div class="col s12 l7">
-                    <form>
-                      <div class="input-field">
-                        <input type="text" id="post-title" value="Post Pierwszy">
-                        <label for="post-title">Tytuł</label>
-                      </div>
-                      <div class="input-field">
-                        <select>
-                          <option value="" disabled>Wybierz Opcję</option>
-                          <option value="1">Front-End Dev</option>
-                          <option value="2">Projektowanie</option>
-                          <option value="3">Back-End Dev</option>
-                          <option value="4">Gadżety</option>
-                          <option value="5">Inne</option>
-                        </select>
-                        <label>Katogoria</label>
-                      </div>
-                      <div class="input-field">
-                        <h5>Treść Posta</h5>
-                        <textarea name="body" id="body" class="materialize-textarea"></textarea>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <div class="card-action">
-                <button class="btn-large blue right">Zapisz</button>
-                <button class="btn-large grey darken-4">Skasuj</button>
+                <h4 class="center">Użytkownicy</h4>
+                <table>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Imię</th>
+                      <th>Tytuł Posta</th>
+                      <th>Kategoria</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td width="100">
+                        <img src="img/face4.jpg" alt="" class="responsive-img circle">
+                      </td>
+                      <td>Kamil</td>
+                      <td>Post nr 1</td>
+                      <td>Projektowanie</td>
+                      <td>
+                        <a class="blue white-text btn" href="details.html">Szczegóły</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="100">
+                        <img src="img/face3.jpg" alt="" class="responsive-img circle">
+                      </td>
+                      <td>Elżbieta</td>
+                      <td>Post nr 2</td>
+                      <td>Front-End Dev</td>
+                      <td>
+                        <a class="blue white-text btn" href="details.html">Szczegóły</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="100">
+                        <img src="img/face1.jpg" alt="" class="responsive-img circle">
+                      </td>
+                      <td>Anna</td>
+                      <td>Post nr 3</td>
+                      <td>Back-End Dev</td>
+                      <td>
+                        <a class="blue white-text btn" href="details.html">Szczegóły</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="100">
+                        <img src="img/face2.jpg" alt="" class="responsive-img circle">
+                      </td>
+                      <td>Damian</td>
+                      <td>Post nr 4</td>
+                      <td>Gadżety</td>
+                      <td>
+                        <a class="blue white-text btn" href="details.html">Szczegóły</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <ul class="pagination center">
+                  <li class="disabled">
+                    <a href="#!">
+                      <i class="material-icons">chevron_left</i>
+                    </a>
+                  </li>
+                  <li class="active">
+                    <a href="#!">1</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a href="#!">2</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a href="#!">3</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a href="#!">4</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a href="#!">5</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a href="#!">
+                      <i class="material-icons">chevron_right</i>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -221,6 +271,30 @@
       </div>
     </section>
   </main>
+
+  <!-- PRZYPIĘTY PRZYCISK Z AKCJĄ -->
+  <div class="fixed-action-btn click-to-toggle">
+    <a class="btn-floating btn-large blue">
+      <i class="material-icons">add</i>
+    </a>
+    <ul>
+      <li>
+        <a href="#category-modal" class="modal-trigger btn-floating blue tooltipped" data-delay="100" data-position="left" data-tooltip="Dodaj kategorię">
+          <i class="material-icons">folder</i>
+        </a>
+      </li>
+      <li>
+        <a href="#post-modal" class="modal-trigger btn-floating blue tooltipped" data-delay="100" data-position="left" data-tooltip="Dodaj post">
+          <i class="material-icons">mode_edit</i>
+        </a>
+      </li>
+      <li>
+        <a href="#user-modal" class="modal-trigger btn-floating blue tooltipped" data-delay="100" data-position="left" data-tooltip="Dodaj użytkownika">
+          <i class="material-icons">supervisor_account</i>
+        </a>
+      </li>
+    </ul>
+  </div>
 
   <!-- STOPKA -->
   <footer class="section grey darken-4 white-text center">
@@ -236,10 +310,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script src="https://cdn.ckeditor.com/4.9.0/standard/ckeditor.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/details.js"></script>
-  <script>
-    CKEDITOR.replace('body');
-  </script>
+  <!-- <script src="js/users.js"></script> -->
+  <script src="js/localStorage.js"></script>
 </body>
 
 </html>

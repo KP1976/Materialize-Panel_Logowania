@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   date.textContent = data.date;
   console.log(data.category);
 
-  // uSTAWIENIE ATRYBUTU SELECTED W ZALEŻNOŚCI, KTÓRA BYŁA KATEGORIA W POŚCIE 
+  // USTAWIENIE ATRYBUTU SELECTED W ZALEŻNOŚCI, KTÓRA BYŁA KATEGORIA W POŚCIE 
   categories.forEach((elem, index) => {
     if (elem.textContent === data.category) {
       elem.setAttribute('selected', true);
