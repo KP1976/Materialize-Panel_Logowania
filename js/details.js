@@ -1,19 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
   const row = document.querySelector('.main-container .card-content .row');
-  const categories = document.querySelectorAll('select option');
+  const pictureSrc = document.querySelector('.main-container img');
+  const userName = document.querySelector('.main-container h5');
+  const date = document.querySelector('.main-container p');
   const postTitle = document.getElementById('post-title');
+  const categories = document.querySelectorAll('select option');
 
-  // WSTAWIENIE TYTUŁU POSTA Z PLIKU INDEX.HTML W INPUT TYTUŁU POSTA W DETAILS.HTML
-  let tab = localStorage.getItem('post');
-  const postTitleFromLS = tab.substring(0, tab.indexOf(','));
-  postTitle.value = postTitleFromLS;
+  // POBRANIE DANYCH Z LOCALSTORAGE
+  let data = JSON.parse(localStorage.getItem('post'));
 
-  // SPRAWDZENIE KTÓRY OPTION MA ATRYBUT SELECTED
+  // WSTAWIENIE DANYCH POSTA Z PLIKU INDEX.HTML W ODPOWIEDNIE MIEJSCA W DETAILS.HTML
+  postTitle.value = data.postTitle;
+  pictureSrc.setAttribute('src', data.pictureSrc);
+  userName.textContent = data.userName;
+  date.textContent = data.date;
+  console.log(data.category);
+
+  // uSTAWIENIE ATRYBUTU SELECTED W ZALEŻNOŚCI, KTÓRA BYŁA KATEGORIA W POŚCIE 
   categories.forEach((elem, index) => {
-    let attr = elem.hasAttribute('selected');
-    if (attr) {
-      console.log(`Atrybut selected jest w opcji numer: ${index}`);
-      elem.removeAttribute('selected');
+    if (elem.textContent === data.category) {
+      elem.setAttribute('selected', true);
     }
   });
 });
