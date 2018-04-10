@@ -120,13 +120,13 @@
       </a>
     </li>
     <li>
-      <a class="black-text" href="users.html">
+      <a class="black-text" href="categories.html">
         <i class="material-icons">folder</i>
         <span class="side-nav-text">Kategorie</span>
       </a>
     </li>
     <li>
-      <a class="black-text" href="posts.html">
+      <a class="black-text" href="comments.html">
         <i class="material-icons">mode_comment</i>
         <span class="side-nav-text">Komentarze</span>
       </a>
@@ -170,6 +170,13 @@
       </a>
     </li>
   </ul>
+
+  <div class="breadcrumb-wrapper">
+    <a href="users.html" class="breadcrumb active">Użytkownicy</a>
+    <a href="posts.html" class="breadcrumb">Posty</a>
+    <a href="categories.html" class="breadcrumb">Kategorie</a>
+    <a href="comments.html" class="breadcrumb">Komentarze</a>
+  </div>
 
   <main class="main-container">
     <!-- SEKCJA UŻYTKOWNIKA -->
@@ -272,26 +279,9 @@
 
   <!-- PRZYPIĘTY PRZYCISK Z AKCJĄ -->
   <div class="fixed-action-btn click-to-toggle">
-    <a class="btn-floating btn-large blue">
+    <a class="btn-floating btn-large blue modal-trigger" href="#user-modal">
       <i class="material-icons">add</i>
     </a>
-    <ul>
-      <li>
-        <a href="#category-modal" class="modal-trigger btn-floating blue tooltipped" data-delay="100" data-position="left" data-tooltip="Dodaj kategorię">
-          <i class="material-icons">folder</i>
-        </a>
-      </li>
-      <li>
-        <a href="#post-modal" class="modal-trigger btn-floating blue tooltipped" data-delay="100" data-position="left" data-tooltip="Dodaj post">
-          <i class="material-icons">mode_edit</i>
-        </a>
-      </li>
-      <li>
-        <a href="#user-modal" class="modal-trigger btn-floating blue tooltipped" data-delay="100" data-position="left" data-tooltip="Dodaj użytkownika">
-          <i class="material-icons">supervisor_account</i>
-        </a>
-      </li>
-    </ul>
   </div>
 
   <!-- STOPKA -->
@@ -304,9 +294,36 @@
     </div>
   </footer>
 
+  <!-- MODAL Z DODAWANIEM UŻYTKOWNIKA -->
+  <div id="user-modal" class="modal">
+    <div class="modal-content">
+      <h4 class="center">Dodaj Użytkownika</h4>
+      <form>
+        <div class="input-field">
+          <input type="text" id="name">
+          <label for="name">Imię</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password">
+          <label for="password">Hasło</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password2">
+          <label for="password2">Potwierdź Hasło</label>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <a href="#!" class="mdal-action modal-close btn blue white-text">Zatwierdź</a>
+      </div>
+    </div>
+  </div>
+
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script src="https://cdn.ckeditor.com/4.9.0/standard/ckeditor.js"></script>
   <script src="js/script.js"></script>
   <script src="js/users-data.js"></script>
   <script src="js/localStorage.js"></script>

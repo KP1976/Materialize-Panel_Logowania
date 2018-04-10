@@ -46,6 +46,23 @@ nav {
   margin: 0 !important;
 }
 
+.breadcrumb-wrapper {
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  font-size: 12px;
+  &::before {
+    font-size: 12px;
+  }
+  &:last-child {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.active {
+  color: #fff;
+}
 
 input[type="text"]:not(.browser-default):focus:not([readonly]),
 input[type="email"]:not(.browser-default):focus:not([readonly]),
@@ -133,7 +150,9 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 .section-login, 
 .section-details,
 .section-users,
-.section-posts {
+.section-posts,
+.section-catogories,
+.section-comments {
   width: 100%;
 }
 

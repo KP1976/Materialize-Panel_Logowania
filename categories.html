@@ -23,6 +23,13 @@
           <i class="material-icons white-text">search</i>
           <input type="text" class="nav-search-input z-depth-2 white-text" placeholder="Szukaj">
         </div>
+        <div class="breadcrumb-wrapper">
+          <a href="index.html" class="breadcrumb">Strona główna</a>
+          <a href="users.html" class="breadcrumb">Użytkownicy</a>
+          <a href="posts.html" class="breadcrumb">Posty</a>
+          <a href="categories.html" class="breadcrumb active">Kategorie</a>
+          <a href="comments.html" class="breadcrumb">Komentarze</a>
+        </div>
         <ul class="right hide-on-med-and-down">
           <li>
             <a href="#" class="waves-effect waves-light badge">
@@ -172,59 +179,92 @@
   </ul>
 
   <main class="main-container">
-    <!-- SEKCJA LOGOWANIA -->
-    <section class="section section-details">
-      <div class="container">
-        <div class="row">
-          <div class="col s12 l12">
-            <div class="card z-depth-5">
-              <div class="card-content">
-                <h4 class="center">Szczegóły Posta</h4>
-                <div class="row">
-                  <div class="col s12 l5 center">
-                    <img src="" alt="" class="responsive-img">
-                    <h5 class="blue-text"></h5>
-                    <p class="blue-text"></p>
-                  </div>
-                  <div class="col s12 l7">
-                    <form>
-                      <p>Data:
-                        <span class="post-date"></span>
-                      </p>
-                      <br>
-                      <div class="input-field">
-                        <input type="text" id="post-title">
-                        <label for="post-title">Tytuł</label>
-                      </div>
-                      <div class="input-field">
-                        <select>
-                          <option disabled>Wybierz Opcję</option>
-                          <option value="1">Front-End Dev</option>
-                          <option value="2">Projektowanie</option>
-                          <option value="3">Back-End Dev</option>
-                          <option value="4">Gadżety</option>
-                          <option value="5">Inne</option>
-                        </select>
-                        <label>Katogoria</label>
-                      </div>
-                      <div class="input-field">
-                        <h5>Treść Posta</h5>
-                        <textarea name="body" id="body" class="materialize-textarea"></textarea>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <div class="card-action">
-                <button class="btn-large blue right">Zapisz</button>
-                <button class="btn-large grey darken-4">Skasuj</button>
-              </div>
+    <!-- SEKCJA UŻYTKOWNIKA -->
+    <section class="section section-catogories">
+      <div class="row">
+        <div class="col s12 l8 push-l2">
+          <div class="card z-depth-5">
+            <div class="card-content">
+              <h4 class="center">Kategorie</h4>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Tytuł</th>
+                    <th>Data Utworzenia</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Projektowanie</td>
+                    <td>15 marca 2018</td>
+                    <td>
+                      <a class="blue white-text btn" href="details.html">Szczegóły</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Front-End Dev</td>
+                    <td>5 lutego 2001</td>
+                    <td>
+                      <a class="blue white-text btn" href="details.html">Szczegóły</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Back-End Dev</td>
+                    <td>13 czerwca 2017</td>
+                    <td>
+                      <a class="blue white-text btn" href="details.html">Szczegóły</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Gadżety</td>
+                    <td>22 listopada 2014</td>
+                    <td>
+                      <a class="blue white-text btn" href="details.html">Szczegóły</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <ul class="pagination center">
+                <li class="disabled">
+                  <a href="#!">
+                    <i class="material-icons">chevron_left</i>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="#!">1</a>
+                </li>
+                <li class="waves-effect">
+                  <a href="#!">2</a>
+                </li>
+                <li class="waves-effect">
+                  <a href="#!">3</a>
+                </li>
+                <li class="waves-effect">
+                  <a href="#!">4</a>
+                </li>
+                <li class="waves-effect">
+                  <a href="#!">5</a>
+                </li>
+                <li class="waves-effect">
+                  <a href="#!">
+                    <i class="material-icons">chevron_right</i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
   </main>
+
+  <!-- PRZYPIĘTY PRZYCISK Z AKCJĄ -->
+  <div class="fixed-action-btn click-to-toggle">
+    <a class="btn-floating btn-large blue modal-trigger" href="#category-modal">
+      <i class="material-icons">add</i>
+    </a>
+  </div>
 
   <!-- STOPKA -->
   <footer class="section grey darken-4 white-text center">
@@ -236,15 +276,27 @@
     </div>
   </footer>
 
+  <!-- MODAL Z DODAWANIEM KATEGORII -->
+  <div id="category-modal" class="modal">
+    <div class="modal-content">
+      <h4 class="center">Dodaj Kategorię</h4>
+      <form>
+        <div class="input-field">
+          <input type="text" id="category-title">
+          <label for="category-title">Tytuł</label>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <a href="#!" class="mdal-action modal-close btn blue white-text">Zatwierdź</a>
+      </div>
+    </div>
+  </div>
+
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script src="https://cdn.ckeditor.com/4.9.0/standard/ckeditor.js"></script>
   <script src="js/script.js"></script>
   <script src="js/users-data.js"></script>
-  <script src="js/details.js"></script>
-  <script>
-    CKEDITOR.replace('body');
-  </script>
+  <script src="js/localStorage.js"></script>
 </body>
 
 </html>

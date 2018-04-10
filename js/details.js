@@ -7,14 +7,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   let user = localStorage.getItem('user');
+  let category = localStorage.getItem('category');
 
-  if (user === 'Kamil') {
+  if (user === 'Kamil' || category === 'Projektowanie') {
     pushDataToHTML(0);
-  } else if (user === 'Elżbieta') {
+  } else if (user === 'Elżbieta' || category === 'Front-End Dev') {
     pushDataToHTML(1);
-  } else if (user === 'Anna') {
+  } else if (user === 'Anna' || category === 'Back-End Dev') {
     pushDataToHTML(2);
-  } else if (user === 'Damian') {
+  } else if (user === 'Damian' || category === 'Gadżety') {
     pushDataToHTML(3);
   }
 

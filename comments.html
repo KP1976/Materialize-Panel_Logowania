@@ -23,6 +23,13 @@
           <i class="material-icons white-text">search</i>
           <input type="text" class="nav-search-input z-depth-2 white-text" placeholder="Szukaj">
         </div>
+        <div class="breadcrumb-wrapper">
+          <a href="index.html" class="breadcrumb">Strona główna</a>
+          <a href="users.html" class="breadcrumb">Użytkownicy</a>
+          <a href="posts.html" class="breadcrumb">Posty</a>
+          <a href="categories.html" class="breadcrumb">Kategorie</a>
+          <a href="comments.html" class="breadcrumb active">Komentarze</a>
+        </div>
         <ul class="right hide-on-med-and-down">
           <li>
             <a href="#" class="waves-effect waves-light badge">
@@ -172,53 +179,82 @@
   </ul>
 
   <main class="main-container">
-    <!-- SEKCJA LOGOWANIA -->
-    <section class="section section-details">
-      <div class="container">
-        <div class="row">
-          <div class="col s12 l12">
-            <div class="card z-depth-5">
-              <div class="card-content">
-                <h4 class="center">Szczegóły Posta</h4>
-                <div class="row">
-                  <div class="col s12 l5 center">
-                    <img src="" alt="" class="responsive-img">
-                    <h5 class="blue-text"></h5>
-                    <p class="blue-text"></p>
+    <!-- SEKCJA UŻYTKOWNIKA -->
+    <section class="section section-comments">
+      <div class="row">
+        <div class="col s12 l8 push-l2">
+          <div class="card z-depth-5">
+            <div class="card-content">
+              <h4 class="center">Komentarze</h4>
+              <ul class="collection with-header lastest-comments">
+                <li class="collection-item avatar">
+                  <img src="img/face1.jpg" alt="" class="circle">
+                  <h5>Anna Korolek</h5>
+                  <p>Eum culpa in quidem incidunt corporis debitis, impedit possimus numquam non nulla? Explicabo illum dolores
+                    eum, minus dolore obcaecati corporis voluptate dolorum.</p>
+                  <div class="right-align">
+                    <a href="#!" class="btn-flat waves-effect blue white-text right-align">Zatwierdź</a>
+                    <a href="#!" class="btn-flat waves-effect grey darken-4 white-text right-align">Odrzuć</a>
                   </div>
-                  <div class="col s12 l7">
-                    <form>
-                      <p>Data:
-                        <span class="post-date"></span>
-                      </p>
-                      <br>
-                      <div class="input-field">
-                        <input type="text" id="post-title">
-                        <label for="post-title">Tytuł</label>
-                      </div>
-                      <div class="input-field">
-                        <select>
-                          <option disabled>Wybierz Opcję</option>
-                          <option value="1">Front-End Dev</option>
-                          <option value="2">Projektowanie</option>
-                          <option value="3">Back-End Dev</option>
-                          <option value="4">Gadżety</option>
-                          <option value="5">Inne</option>
-                        </select>
-                        <label>Katogoria</label>
-                      </div>
-                      <div class="input-field">
-                        <h5>Treść Posta</h5>
-                        <textarea name="body" id="body" class="materialize-textarea"></textarea>
-                      </div>
-                    </form>
+                </li>
+                <li class="collection-item avatar">
+                  <img src="img/face2.jpg" alt="" class="circle">
+                  <h5>Damian Jarząbek</h5>
+                  <p>Omnis veritatis quae veniam numquam adipisci, repellendus cupiditate quis deserunt voluptas non laudantium
+                    sed unde dolor quaerat ipsam repellat dolore odit cumque!</p>
+                  <div class="right-align">
+                    <a href="#!" class="btn-flat waves-effect blue white-text right-align">Zatwierdź</a>
+                    <a href="#!" class="btn-flat waves-effect grey darken-4 white-text right-align">Odrzuć</a>
                   </div>
-                </div>
-              </div>
-              <div class="card-action">
-                <button class="btn-large blue right">Zapisz</button>
-                <button class="btn-large grey darken-4">Skasuj</button>
-              </div>
+                </li>
+                <li class="collection-item avatar">
+                  <img src="img/face3.jpg" alt="" class="circle">
+                  <h5>Elżbieta Horuc</h5>
+                  <p>Impedit, ipsam eligendi. Ut repudiandae error accusamus hic perferendis quo, maxime consequatur veniam
+                    consectetur dolor, vitae aliquid magnam, itaque exercitationem fugit tempore.</p>
+                  <div class="right-align">
+                    <a href="#!" class="btn-flat waves-effect blue white-text right-align">Zatwierdź</a>
+                    <a href="#!" class="btn-flat waves-effect grey darken-4 white-text right-align">Odrzuć</a>
+                  </div>
+                </li>
+                <li class="collection-item avatar">
+                  <img src="img/face4.jpg" alt="" class="circle">
+                  <h5>Kamil Gertront</h5>
+                  <p>Impedit, ipsam eligendi. Ut repudiandae error accusamus hic perferendis quo, maxime consequatur veniam
+                    consectetur dolor, vitae aliquid magnam, itaque exercitationem fugit tempore.</p>
+                  <div class="right-align">
+                    <a href="#!" class="btn-flat waves-effect blue white-text right-align">Zatwierdź</a>
+                    <a href="#!" class="btn-flat waves-effect grey darken-4 white-text right-align">Odrzuć</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="pagination center">
+                <li class="disabled">
+                  <a href="#!">
+                    <i class="material-icons">chevron_left</i>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="#!">1</a>
+                </li>
+                <li class="waves-effect">
+                  <a href="#!">2</a>
+                </li>
+                <li class="waves-effect">
+                  <a href="#!">3</a>
+                </li>
+                <li class="waves-effect">
+                  <a href="#!">4</a>
+                </li>
+                <li class="waves-effect">
+                  <a href="#!">5</a>
+                </li>
+                <li class="waves-effect">
+                  <a href="#!">
+                    <i class="material-icons">chevron_right</i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -238,13 +274,9 @@
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script src="https://cdn.ckeditor.com/4.9.0/standard/ckeditor.js"></script>
   <script src="js/script.js"></script>
   <script src="js/users-data.js"></script>
-  <script src="js/details.js"></script>
-  <script>
-    CKEDITOR.replace('body');
-  </script>
+  <script src="js/localStorage.js"></script>
 </body>
 
 </html>
