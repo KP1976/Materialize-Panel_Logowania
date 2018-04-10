@@ -188,13 +188,17 @@
                   </div>
                   <div class="col s12 l7">
                     <form>
+                      <p>Data:
+                        <span class="post-date"></span>
+                      </p>
+                      <br>
                       <div class="input-field">
-                        <input type="text" id="post-title" value="Post Pierwszy">
+                        <input type="text" id="post-title">
                         <label for="post-title">Tytuł</label>
                       </div>
                       <div class="input-field">
                         <select>
-                          <option value="" disabled>Wybierz Opcję</option>
+                          <option disabled>Wybierz Opcję</option>
                           <option value="1">Front-End Dev</option>
                           <option value="2">Projektowanie</option>
                           <option value="3">Back-End Dev</option>
@@ -236,6 +240,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script src="https://cdn.ckeditor.com/4.9.0/standard/ckeditor.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/users-data.js"></script>
   <script src="js/details.js"></script>
   <script>
     CKEDITOR.replace('body');
