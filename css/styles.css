@@ -63,21 +63,21 @@ nav .brand-logo {
 }
 
 .breadcrumb-wrapper {
-  margin: 0 auto;
+  margin: 20px auto 0;
 }
 
 .breadcrumb {
   font-size: 12px;
 }
 .breadcrumb::before {
-  font-size: 12px;
+  font-size: 16px;
 }
 .breadcrumb:last-child {
   color: rgba(255, 255, 255, 0.7);
 }
 
 .active {
-  color: #fff;
+  color: #90caf9 !important;
 }
 
 input[type="text"]:not(.browser-default):focus:not([readonly]),
@@ -165,7 +165,8 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 .section-users,
 .section-posts,
 .section-catogories,
-.section-comments {
+.section-comments,
+.section-mailbox {
   width: 100%;
 }
 
@@ -179,6 +180,36 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 
 .pagination li.active {
   background-color: #2196F3;
+}
+
+.card-content-mine {
+  padding: 2rem;
+  background: #fff;
+}
+
+.email-title {
+  font-weight: bold;
+}
+
+.list-of-emails .circle {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+}
+.list-of-emails .active {
+  color: #000 !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.list-of-emails .collection-item:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 993px) {
