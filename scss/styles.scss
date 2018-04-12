@@ -48,6 +48,9 @@ nav {
 
 .breadcrumb-wrapper {
   margin: 20px auto 0;
+  .active {
+    color: #90caf9 !important;
+  }
 }
 
 .breadcrumb {
@@ -60,9 +63,6 @@ nav {
   }
 }
 
-.active {
-  color: #90caf9 !important;
-}
 
 input[type="text"]:not(.browser-default):focus:not([readonly]),
 input[type="email"]:not(.browser-default):focus:not([readonly]),
